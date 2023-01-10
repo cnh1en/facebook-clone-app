@@ -54,7 +54,7 @@ const Stacks = () => {
           animation: 'slide_from_right',
         }}
       >
-        {isLogged ? (
+        {localStorage.getItem('isLogged') == 'true' ? (
           <React.Fragment>
             <Stack.Screen
               name="home"
